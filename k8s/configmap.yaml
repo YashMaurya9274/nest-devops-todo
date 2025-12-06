@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-config
+data:
+  MONGO_URI: mongodb+srv://yashmauryadev12_db_user:d8hnnHUKh4PEM3hP@cluster0.mdjjqhs.mongodb.net/?appName=Cluster0
+  COOKIE_NAME: todoAuthKey
+  JWT_SECRET: your_jwt_secret_here_change_this
+  API_KEY: todoSeceretApiKey123
