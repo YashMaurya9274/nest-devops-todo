@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-backend
+  name: nest-devops-todo-api
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: todo-backend
+      app: nest-devops-todo-api
   template:
     metadata:
       labels:
-        app: todo-backend
+        app: nest-devops-todo-api
     spec:
       containers:
-        - name: todo-backend
-          image: DOCKER_USERNAME/todo-backend:latest
+        - name: nest-devops-todo-api
+          image: DOCKER_USERNAME/nest-devops-todo-api:latest
           ports:
             - containerPort: 3000
           env:
